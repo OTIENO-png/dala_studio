@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DALA</title>
+    <link rel="icon" type="image/png" href="image/logo.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script>
+         $('kenyaone')
+                .on('mouseenter', function () {
+                    $('#title1').show('fast');
+                })
+                .on('mouseleave', function () {
+                    $('#title1').hide('fast');
+                });
+        function myFunction() {
+            let text;
+            let name = prompt("Please enter your name:", "*****");
+            if (name == null || name == "") {
+                text = "User cancelled the prompt.";
+            } else {
+                text = "Hello " + name + "we have received your essage thank you for contacting us?";
+            }
+            document.getElementById("ouput").innerHTML = text;
+        }
+    </script>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // design button to display text and hide button for design.
+        $(document).ready(function () {
+            $("#design").click(function () {
+                $("#designtext").show();
+                $("#design").hide();
+            });
+
+        });
+        // used to hide text and  display button for design.
+        $(document).ready(function () {
+                $("#designtext").click(function () {
+                    $("#design").show();
+                    $("#designtext").hide();
+                });
+
+            });
+        // development button to display text and hide button for development.
+        $(document).ready(function () {
+                $("#development").click(function () {
+                    $("#developmenttext").show();
+                    $("#development").hide();
+                });
+
+            });
+        // used to hide text and  display button for development.
+            $(document).ready(function () {
+                $("#developmenttext").click(function () {
+                    $("#development").show();
+                    $("#developmenttext").hide();
+                               
+                });
+
+            });
+        // development button to display text and hide button for development.
+            $(document).ready(function () {
+                $("#product").click(function () {
+                    $("#producttext").show();
+                    $("#product").hide();
+                });
+
+            });
+        // used to hide text and  display button for development.
+            $(document).ready(function () {
+                $("#producttext").click(function () {
+                    $("#product").show();
+                    $("#producttext").hide();
+                });
+
+            });
+        // $(document).ready(function () {
+        //     $("#desi").click(function () {
+        //         $("button").show();
+        //     });
+
+        // });
+    </script>
+<style>
+    .column {
+  float:left;
+  width: 30%;
+  padding: 5px;
+}
+#designtext{
+display: none;
+}
+#developmenttext{
+display: none;
+}
+#producttext{
+    display: none;
+}
+ #one{
+height: 500px;
+background-image: url("/image/man.jpg");
+background-repeat: no-repeat;
+ }
+ #logo{
+    /* padding-bottom: 100px;
+     padding-right: 50px;
+     align-items: center;
+     padding-top: 50px;*/
+     
+     padding-bottom: 50px;
+ }
+ #two{
+display: block;
+width: 100%;
+height: 500px;
+background-image: url("/image/laptop.jpg");
+background-repeat: no-repeat;
+ } 
+ #four{
+display: block;
+width: 100%;
+height: 200px;
+background-image: url("/image/working.jpg");
+background-repeat: no-repeat;
+padding-right: 200px;
+padding-top: 200px;
+
+ } 
+ #three{
+     padding-left: 200px;
+     padding-right: 200px;
+     padding-top: 200px;
+ }
+ #heading{
+     padding-top: 200px;
+ }
+</style>
+    <section id="one">
+     
+     <center>
+         <h1 id="heading">WELCOME <br> DALA STUDIO</h1>
+         <p>Amazing people are making fun in the amazing environment.</p>
+         <img id="logo" src="/image/logo.png">
+    </section> </center>
+
+    <center>
+        <h1>ABOUT</h1>
+     <p>When you are working with us,you are part of ateam of committed collaborators.All aspect of our software development
+    process are integrated,interactive and agle.
+    
+    Our approach uniflies design development and product management to create exceptional products.
+    
+    We start each project by understanding your business goals,the user need and the project requirements.
+    
+    Then we can help to transalte them into effective and elegant solutions.</p></center>
+    <center>
+    <section id="four">
+        <h1>SERVICE</h1>
+            <p>Before we sign a contract or write a line of code our team will spend the necessary time needed to
+                understand your product vision.<br>The outcome of this scoping sessionis a propasal onhigh level statement on work based on nyour requirements we can complete offering or just the pieces you need</p>
+    </section>
+    <h2><strong>WHAT WE DO</strong> </h2>
+    
+    <div class="column">
+        <button type="button" id="design"> <img src="image/design_icon.png" height="50"
+                width="75" />Design</button>
+        <div id="designtext">
+            <p><strong>Design</strong><br>Our design practice offers afull range of services including brand
+                strategy,interaction and visual design and user experencice testing.
+                Througout your project,our designers create and implement visual design and workfloew solitc user,feedback
+                and work with yu making sure waht gets built is what is needed.</p>
+        </div>
+    </div>
+
+    <!-- development button section -->
+    <div class="column">
+        <button type="button" id="development"> <img src="image/dev_icon.png" height="50"
+                width="75" />Development</button>
+        <div id="developmenttext">
+            <p><strong>Development</strong><br>All enginners are fluent in the latest enterprise,mobile and web
+                development technologies.The collaborate with your team to write and improve code on adaily basic using proven practices such
+                as test driven development an pair programmming.</p>
+        </div>
+        <!-- <div style="display: none" id="title1" class="title1">
+            <p>
+                geometric <br />
+                wallpaper
+            </p>
+        </div> -->
+    </div>
+    
+    
+    <div class="column">
+        <button type="button" id="product"> <img src="image/product_icon.png" height="50" width="75" />Product Management</button>
+        <div id="producttext">
+            <p><strong>Project Mangement</strong> <br>Planning and development is interactive.Because we are constanly coding and testing the products we build ready to go live.
+            This interactive process allows for changes as business requirements evolve.</p>
+        </div>
+    </div>   
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br> 
+    
+        <h4>PORTFOLIO</h4>
+        
+        <img src="image/work4.jpg" height="200" width="250">
+        <img src="image/work3.jpg" height="200" width="250">
+        <img src="image/work2.jpg" height="200" width="250">
+        <img src="image/work1.jpg" height="200" width="250"> <br>
+        <img src="image/work5.jpg" height="200" width="250">
+        <img src="image/work6.jpg" height="200" width="250">
+        <img src="image/work7.jpg" height="200" width="250">
+        <img src="image/work8.jpg" height="200" width="250"><br>
+        </div>
+       
+    </center>
+<section id="two">
+        <center>
+            <form id="three">
+                <fieldset>
+                    <center><legend>CONTACT US.</legend></center>
+                   
+                    <label>Name:</label>
+                    <input type="text" id="name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email"><br><br>
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="2" cols="40" placeholder="type you message" required></textarea><br>
+                <button onclick="myFunction(name)">SUBMIT</button>
+                
+                <p id="ouput"></p>
+
+                </fieldset>
+                
+            </form>
+        </center>
+        
+    </section>
+    <br>
+    <div>
+        <center>
+            <button type="button"><img src="image/behance.png" height="30" width="30"></button>
+            <button type="button"><img src="image/dribble.png" height="30" width="35"></button>
+            <button type="button"><img src="image/facebook.png" height="30" width="35"></button>
+            <button type="button"><img src="image/flickr.png" height="30" width="35"></button>
+            <button type="button"><img src="image/g_plus.png" height="30" width="35"></button>
+            <button type="button"><img src="image/pinterest.png" height="30" width="35"></button>
+            <button type="button"><img src="image/skype.png" height="30" width="35"></button>
+            <button type="button"><img src="image/stumble_upon.png" height="30" width="35"></button>
+            <button type="button"><img src="image/you_tube.png" height="30" width="35"></button>
+            </div>
+            <center><p>DALA STUDIO</p>
+            <P style="font-style: italic;">2023</P></center>
+        </center>
+        
+</body>
+</html>
